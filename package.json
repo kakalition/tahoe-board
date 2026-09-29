@@ -1,0 +1,25 @@
+{
+  "name": "tahoe-board",
+  "private": true,
+  "scripts": {
+    "dev": "bun run --parallel dev:server dev:client",
+    "dev:server": "bun run --hot server/index.ts",
+    "dev:client": "vite --config client/vite.config.ts",
+    "start": "bun run server/index.ts"
+  },
+  "dependencies": {
+    "@elysiajs/cors": "^1.4.2",
+    "elysia": "^1.4.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "@vitejs/plugin-react": "^4.5.0",
+    "tailwindcss": "^4.1.0",
+    "typescript": "^5.8.0",
+    "vite": "^6.3.0"
+  }
+}

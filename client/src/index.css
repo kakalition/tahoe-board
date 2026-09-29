@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+:root {
+  font-family: "SF Pro Display", "SF Pro Text", -apple-system, BlinkMacSystemFont,
+    "Helvetica Neue", "Segoe UI", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  color: #1e293b;
+  background-color: #dce8ff;
+  background-image:
+    radial-gradient(900px 620px at 12% 8%, rgba(147, 197, 253, 0.9), transparent 60%),
+    radial-gradient(760px 540px at 88% 12%, rgba(249, 168, 212, 0.55), transparent 55%),
+    radial-gradient(820px 700px at 78% 92%, rgba(110, 231, 183, 0.5), transparent 55%),
+    radial-gradient(640px 520px at 30% 88%, rgba(196, 181, 253, 0.6), transparent 60%);
+  background-attachment: fixed;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.42);
+  backdrop-filter: blur(24px) saturate(160%);
+  -webkit-backdrop-filter: blur(24px) saturate(160%);
+}
+
+.glass-strong {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(28px) saturate(180%);
+  -webkit-backdrop-filter: blur(28px) saturate(180%);
+}
+
+.card-shadow {
+  box-shadow:
+    0 1px 2px rgba(15, 23, 42, 0.06),
+    0 8px 24px rgba(15, 23, 42, 0.08);
+}
